@@ -1,7 +1,6 @@
 # Translation
 |  filename  | Approx. Lines |                            commments                           |
 |------------|---------------|----------------------------------------------------------------|
-|tta.c       |  87           | macros                                                         |
 |aac.c       |  90           | looks complicated                                              |
 |aiff.c      |  91           | looping, looks complicated                                     |
 |spc.c       |  93           | iso decode, video game                                         |

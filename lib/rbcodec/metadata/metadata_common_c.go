@@ -114,6 +114,13 @@ func GetLongBE(buf []byte) uint32 {
 	return uint32(p[0])<<24 | uint32(p[1])<<16 | uint32(p[2])<<8 | uint32(p[3])
 }
 
+// Read an unaligned 16-bit little endian short from buffer.
+func GetShortLE(buf []byte) uint16 {
+	var p [2]byte
+	copy(p[:], buf)
+	return uint16(p[0]) | (uint16(p[1]) << 8)
+}
+
 func ParseTag(name, value string, id3 *Mp3Entry, tagType TagType) (err error) {
 	var p *string = nil
 

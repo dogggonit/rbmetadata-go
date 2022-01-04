@@ -324,13 +324,13 @@ var AudioFormats = map[CodecType]AfmtEntry{
 	//	ParseFunc: GetWave64Metadata,
 	//	ExtList:   []string{"w64"},
 	//},
-	//// True Audio
-	//AfmtTta: {
-	//	Label:     "TTA",
-	//	Filename:  "tta",
-	//	ParseFunc: GetTtaMetadata,
-	//	ExtList:   []string{"tta"},
-	//},
+	// True Audio
+	AfmtTta: {
+		Label:     "TTA",
+		Filename:  "tta",
+		ParseFunc: GetTtaMetadata,
+		ExtList:   []string{"tta"},
+	},
 	// WMA Voice in ASF
 	AfmtWmavoice: {
 		Label:     "WMAVoice",
